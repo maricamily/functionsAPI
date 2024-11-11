@@ -4,12 +4,16 @@
   "description": "",
   "scripts": {
     "start": "func start",
-    "test": "echo \"No tests yet...\""
+    "test": "jest"
   },
   "dependencies": {
     "@azure/functions": "^4.0.0",
     "dotenv": "^16.4.5",
     "mssql": "^11.0.1"
   },
-  "main": "src/{index.js,functions/*.js}"
+  "main": "src/{index.js,functions/*.js}",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
 }
